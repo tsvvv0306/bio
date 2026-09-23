@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --card-bg: #000000;
+            --text-main: #ffffff;
+            --text-muted: #868686;
+            --accent: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #ffffff;
+                --card-bg: #000000;
+                --text-main: #edf2f7;
+                --text-muted: #999999;
+                --accent: #ffffff;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no repeat;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background 0.3s;
+        }
+        .card {
+    
+    background-color: rgba(0, 0, 0, 0.45); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(0, 0, 0, 0.25); 
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            padding: 40px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            transition: background 0.3s, transform 0.2s;
+            
+            
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 10px 0 5px 0;
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: block;
+            padding: 12px;
+            background-color: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background-color: var(--accent);
+            color: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Замените URL картинки на свою (например, ссылку на ваше фото в GitHub) -->
+        <img class="avatar" src="avatar.jpg" alt="Аватар">
+        
+        <h1>Timofey Tsvetkov</h1>
+        <div class="subtitle">FEFU student (DevOps ingineer) </div>
+        <div class="subtitle">Age: 18 y/o </div>
+        
+        <div class="links">
+            <a href="https://t.me/alax0306" class="btn" target="_blank">Telegram</a>
+            <a href="https://github.com/tsvvv0306" class="btn" target="_blank">GitHub</a>
+            <a href="https://steamcommunity.com/profiles/76561198850448908/" class="btn" target="_blank">Steam</a>
+            <a href="https://discordapp.com/users/597658936803459084" class="btn" target="_blank">Discord</a>
+        </div>
+        <h2 style="margin-top: 30px; font-size: 18px; border-bottom: 2px solid var(--accent); padding-bottom: 5px; text-align: left;">💻 My devices</h2>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px; text-align: left; font-size: 14px;">
+            <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Laptop</td>
+                <td style="color: var(--text-main); text-align: right;">DELL G3 3590</td>
+            </tr>
+            <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">OS</td>
+                <td style="color: var(--text-main); text-align: right;">Windows 11 Pro</td>
+            </tr>
+            <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Keyboard</td>
+                <td style="color: var(--text-main); text-align: right;">Royal Kludge R75</td>
+            </tr>
+             <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Mouse</td>
+                <td style="color: var(--text-main); text-align: right;">Razer Deathadder Essential</td>
+            </tr>
+             <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Display</td>
+                <td style="color: var(--text-main); text-align: right;">MSI Pro MP242</td>
+            </tr>
+            <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Main phone</td>
+                <td style="color: var(--text-main); text-align: right;">iPhone 14 Pro</td>
+            </tr>
+             </tr>
+            <tr style="height: 35px;">
+                <td style="font-weight: bold; color: var(--accent);">Secondary phone</td>
+                <td style="color: var(--text-main); text-align: right;">Google Pixel 6 Pro</td>
+                </tr>
+           
+        </table>
+
+        </div>
+    </div>
+
+</body>
+</html>
